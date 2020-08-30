@@ -1,0 +1,29 @@
+#############################
+LOCALIZATION
+#############################
+For this project, I used the AMCL package to track the pose of a robot in the given map. The AMCL package stands for Adaptive Monte Carlo Localization. It uses particle filter approach to track the position of the robot. It adjusts the number of particles over a period of time as the robot traverses around the map.
+
+#############################
+MAPPING
+#############################
+For mapping the world, we can use RTAB-Map package. RTAB stands for Real-Time Appearence-Based Mapping, it uses SLAM approach that creates a 2D occupany grid map that can be used for navigating the robot.   
+
+#############################
+NAVIGATION
+#############################
+This project utilizes the ROS navigation stack package. It drives the robot from one location to another avoiding obstaacles as the robot moves along the path. The path from start point to the final point is created using the Dijkstra's algorithm.
+
+
+############################
+PICK_OBJECTS
+############################
+The pick_objects package makes use of the aforementioned packages to drive the robot from the pick up postion to the dropoff point. A client is defined to send the goal requests(pickup/drop) to the move_base server through a SimpleActionClient. Once the robot reaches the pickup point, it waits for 5 seconds and then moves to the goal point.
+
+
+############################
+ADD_MARKERS
+############################
+The add_markers are used to create virtual objects in the rviz. It subscribes to the AMCL coordinates to find the location of the robot and determines the distance between the robot's current position and the pickup/drop point. Once the distnace between them is less than 0.6, the ADD and DELETE parameters of the markr come into the picture. The ADD parameter creates a virtual object at a specified point whereas the DELETE parameter removes the virtual object in the mapped environment.
+
+
+
