@@ -44,11 +44,11 @@ Show the marker at the drop off zone once your robot reaches it.
 ## How to run:
 * Meet the aforementioned Prerequisites and Dependencies 
 * Clone this repository 
-* Open this repository, make and source 
+* Open this repository, make and source \
 `cd /{your_directory}/catkin_ws/` \
 `catkin_make` \
 `source devel/setup.bash`
-* Launch the home service robot 
+* Launch the home service robot \
 `./src/scripts/home_service.sh`
 
 ## Note:
