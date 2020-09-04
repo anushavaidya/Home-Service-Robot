@@ -53,7 +53,7 @@ Show the marker at the drop off zone once your robot reaches it.
 
 ## Note:
 * Make sure you change the path directories to catkin_ws in the shell scripts 
-* Details of each shell scripts is given in the script folder 
+* Details of each shell scripts is given in the [script folder](https://github.com/anushavaidya/Home-Service-Robot/tree/master/catkin_ws/src/scripts) 
 * It is recommended to update and upgrade your environment before runnong the code 
 * If you want to change the initial position of the robot, type in the co-ordinates of the initial position in the [kobuki.launch.xml](https://github.com/anushavaidya/Home-Service-Robot/blob/master/catkin_ws/src/turtlebot_simulator/turtlebot_gazebo/launch/includes/kobuki.launch.xml) which is in the launch directory of turtlebot_gazebo. Here, you can change the X,Y co-ordinates and the orientation as well. If you do change the initial position of the robot, make sure you change the position is [amcl_demo.launch](https://github.com/anushavaidya/Home-Service-Robot/blob/master/catkin_ws/src/turtlebot_simulator/turtlebot_gazebo/launch/amcl_demo.launch) file as well.
 
